@@ -7,7 +7,7 @@ const allCoursesButton = document.querySelector('.allcourses');
 let showAllCourses = false;
 let data = [];
 
-fetch('http://localhost:3000/carts')
+fetch('https://baku-devs-data-json-server.vercel.app/carts')
   .then(response => response.json())
   .then(responseData => {
     data = responseData.slice(0, 8);
@@ -127,7 +127,7 @@ fetch('http://localhost:3000/carts')
 
 
   const divcard2 = document.querySelector('.carts2')
-fetch('http://localhost:3000/carts2')
+fetch('https://baku-devs-data-json-server.vercel.app/carts2')
   .then(response => response.json())
   .then(data => {
     console.log(data)

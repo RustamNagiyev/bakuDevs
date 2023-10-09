@@ -30,7 +30,7 @@ const displayFavorites = () => {
   favoritesContainer.innerHTML = '';
 
   favorites.forEach((favoriteId) => {
-    fetch(`http://localhost:3000/carts/${favoriteId}`)
+    fetch(`https://baku-devs-data-json-server.vercel.app/carts/${favoriteId}`)
       .then((response) => response.json())
       .then((favoriteData) => {
         const favoriteCard = document.createElement('div');

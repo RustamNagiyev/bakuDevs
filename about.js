@@ -1,5 +1,5 @@
 const divcard2 = document.querySelector('.carts2')
-fetch('http://localhost:3000/carts2')
+fetch('https://baku-devs-data-json-server.vercel.app/carts2')
   .then(response => response.json())
   .then(data => {
     console.log(data)

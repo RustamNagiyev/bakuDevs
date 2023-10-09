@@ -21,7 +21,7 @@ if (localStorage.getItem('favorites')) {
   favorites = JSON.parse(localStorage.getItem('favorites'));
 }
 
-fetch('http://localhost:3000/carts')
+fetch('https://baku-devs-data-json-server.vercel.app/carts')
   .then(response => response.json())
   .then(responseData => {
     const data = responseData; // Verileri diziye atıyoruz

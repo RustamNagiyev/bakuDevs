@@ -1,6 +1,6 @@
 const flexable2 = document.querySelector('.flexable2');
 
-fetch('http://localhost:3000/page')
+fetch('https://baku-devs-data-json-server.vercel.app/page')
   .then(response => response.json())
   .then(data => {
     console.log(data);
@@ -28,7 +28,7 @@ fetch('http://localhost:3000/page')
 
 const divcard = document.querySelector('.carts');
 
-fetch('http://localhost:3000/carts')
+fetch('https://baku-devs-data-json-server.vercel.app/carts')
   .then(response => response.json())
   .then(data => {
     console.log(data);
